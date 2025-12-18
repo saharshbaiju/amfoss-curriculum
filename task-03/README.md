@@ -1,6 +1,6 @@
 task-3 was to create the wireframe for MeloFi web and mobile app
 
-I used Figma to create the wire frame, my aim was to create a minimalist easy to use design
+I used Figma to create the wireframe, my aim was to create a minimalist easy to use design
 
 
 Web Wireframe
