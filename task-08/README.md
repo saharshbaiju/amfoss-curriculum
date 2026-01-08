@@ -10,5 +10,3 @@ In my shell I have implemented the following:<br>
 - Signal handling for ctrl-c and ctrl-z
 - Background process using &
 <br>
-
-Github link : [click here](https://github.com/saharshbaiju/amfoss-curriculum/tree/main/task-08)
