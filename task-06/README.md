@@ -5,19 +5,20 @@ This task is the continuation of the earlier task which is task-05 the frontend.
 
 Here I will be just breifing how to setup mysql for this particular project
 
-1. ### Creating the data base.<br>
+### 1.Creating the data base.<br>
     `CREATE DATABASE melofi;`
-<br>
-2. ### Creating tables.<br>
-    #### In my project I used four tables:<br>
 
-    1. **users** - stores username and hashed password.
+### 2.Creating tables.<br>
 
-    2. **playlists** - stores username and name of playlist with a unique id which is auto incremented(aka playlist id)
+#### In my project I used four tables:<br>
 
-    3. **playlists_items** - this stores all details of songs that are saved as playlist which includes preview url, track name, track id corresponding to their unique playlist id.
+1. **users** - stores username and hashed password.
 
-    4. **recentlyplayed_items** - here is save the details of song which are played by username with primary key as user id and will get fetched for each user by their user id it also do have a default generated time stamp.
+2. **playlists** - stores username and name of playlist with a unique id which is auto incremented(aka playlist id)
+
+3. **playlists_items** - this stores all details of songs that are saved as playlist which includes preview url, track name, track id corresponding to their unique playlist id.
+
+4. **recentlyplayed_items** - here is save the details of song which are played by username with primary key as user id and will get fetched for each user by their user id it also do have a default generated time stamp.
 
     - ## commands for each table:
         **users**: 
@@ -42,7 +43,7 @@ Here I will be just breifing how to setup mysql for this particular project
 
     
 3. ### Updating with your mysql credentials<br>
-   
+   ```python
     def get_db():
     return mysql.connector.connect(
         host="",#add your host (mine was "localhost")
@@ -50,9 +51,9 @@ Here I will be just breifing how to setup mysql for this particular project
         password="",#add your password
         database="melofi",
         autocommit=True
-    )
+    )```
    
-    fill this line in app.py line 12 to 14 which is located inside melofi in the following path `melofi/backend/app.py`
+- fill this line in app.py line 12 to 14 which is located inside melofi in the following path `melofi/backend/app.py`
 
 
 
