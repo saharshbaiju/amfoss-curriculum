@@ -10,6 +10,7 @@ Here I will be just breifing how to setup mysql for this particular project
 <br>
 2. ### Creating tables.<br>
     #### In my project I used four tables:<br>
+
     1. **users** - stores username and hashed password.
 
     2. **playlists** - stores username and name of playlist with a unique id which is auto incremented(aka playlist id)
@@ -41,7 +42,7 @@ Here I will be just breifing how to setup mysql for this particular project
 
     
 3. ### Updating with your mysql credentials<br>
-    ```
+   
     def get_db():
     return mysql.connector.connect(
         host="",#add your host (mine was "localhost")
@@ -50,7 +51,7 @@ Here I will be just breifing how to setup mysql for this particular project
         database="melofi",
         autocommit=True
     )
-    ```
+   
     fill this line in app.py line 12 to 14 which is located inside melofi in the following path `melofi/backend/app.py`
 
 
