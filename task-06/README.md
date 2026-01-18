@@ -6,7 +6,7 @@ This task is the continuation of the earlier task which is task-05 the frontend.
 Here I will be just breifing how to setup mysql for this particular project
 
 ### 1.Creating the data base.<br>
-    `CREATE DATABASE melofi;`
+`CREATE DATABASE melofi;`
 
 ### 2.Creating tables.<br>
 
