@@ -9,9 +9,9 @@ from flask_cors import CORS
 app = Flask(__name__)
 def get_db():
     return mysql.connector.connect(
-        host="",#add your host inside this ""
-        user="",#add your user name
-        password="",#add your password
+        host="localhost",#add your host inside this ""
+        user="root",#add your user name
+        password="Saharsh@70128",#add your password
         database="melofi",#create this database further instruction in Readme of task-06
         autocommit=True
     )
