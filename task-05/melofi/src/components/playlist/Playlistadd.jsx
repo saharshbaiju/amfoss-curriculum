@@ -20,6 +20,7 @@ const Playlistadd = ({data,active,setActive,song}) => {
         const returnmsg = await res.json();
 
         if (res.ok){
+            alert(returnmsg["msg"]);
             return
         }
     }

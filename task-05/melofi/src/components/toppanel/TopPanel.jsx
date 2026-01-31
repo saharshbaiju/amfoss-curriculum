@@ -18,14 +18,14 @@ const TopPanel = ({setDetails,currentUser}) => {
 
     return ( 
         <div className="top-panel">
-            <form >
-                <input type="search" 
-                placeholder="Search songs,artist ..."
-                value={query} 
-                onChange={(e)=> setquery(e.target.value)} 
-                onClick={()=>setquery("")}
-                className="search" />
-            </form>
+        
+            <input type="search" 
+            placeholder="Search songs,artist ..."
+            value={query} 
+            onChange={(e)=> setquery(e.target.value)} 
+            onClick={()=>setquery("")}
+            className="search" />
+   
             <div className="logout">
             <div className="profile">
                 <h3>{currentUser}</h3>
