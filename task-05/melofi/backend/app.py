@@ -8,22 +8,13 @@ from flask_cors import CORS
 
 app = Flask(__name__)
 def get_db():
-    # return mysql.connector.connect(
-    #     # host="localhost",#add your host inside this ""
-    #     # user="root",#add your user name
-    #     # password="Saharsh@70128",#add your password
-    #     # database="melofi",#create this database further instruction in Readme of task-06
-    #     # autocommit=True
-
-    # )
     return mysql.connector.connect(
-    host=os.environ["MYSQLHOST"],
-    user=os.environ["MYSQLUSER"],
-    password=os.environ["MYSQLPASSWORD"],
-    database=os.environ["MYSQLDATABASE"],
-    port=int(os.environ["MYSQLPORT"])
-)
-
+        host="localhost",#add your host inside this ""
+        user="root",#add your user name
+        password="Saharsh@70128",#add your password
+        database="melofi",#create this database further instruction in Readme of task-06
+        autocommit=True
+    )
 CORS(app, origins=["http://localhost:5173"])
 
 
